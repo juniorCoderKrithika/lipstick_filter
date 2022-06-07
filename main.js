@@ -18,7 +18,7 @@ posenet.on('pose',gotPoses);
 
 function draw(){
 image(video,0,0,300,300);
-image(lips,noseX-25,noseY+15,50,30)
+image(lips,noseX-25,noseY+10,50,30)
 }
 function take_snapshot(){
 save("MyFilterSelfie.png")
