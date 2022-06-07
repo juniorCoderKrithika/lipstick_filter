@@ -2,7 +2,7 @@ noseX="";
 noseY="";
 
 function preload(){
-
+lips=loadImage("https://i.postimg.cc/4y3xGv2M/lipstick-lips-png-lipstick-lips-transparent-11563651262a3uflcguyo-removebg-preview.png")
 }
 
 function setup(){
@@ -18,6 +18,7 @@ posenet.on('pose',gotPoses);
 
 function draw(){
 image(video,0,0,300,300);
+image(lips,noseX-30,noseY,50,30)
 }
 function take_snapshot(){
 save("MyFilterSelfie.png")
